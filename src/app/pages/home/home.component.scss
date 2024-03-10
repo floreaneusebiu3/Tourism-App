@@ -1,0 +1,42 @@
+.image-container {
+  background-image: url("/assets/images/home-background2.jpg");
+  background-size: cover;
+  opacity: 50%;
+  background-position: center;
+  height: 95vh;
+  color: #fff;
+  display: flex;
+
+  .text-container {
+    background-color: rgba(91, 161, 248, 0.4);
+    margin-top: 150px;
+    margin-right: 150px;
+    height: 200px;
+    border-radius: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: "Schoolbell", arial, serif;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Schoolbell", arial, serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    color: #fff;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="ticket">
+  <div class="image-container col-7">
+    <img src="assets\images\map.png" alt="Logo" />
+  </div>
+  <div class="information col-5">
+    <h2>{{ destination.title }}</h2>
+    <div class="center">
+      <span class="location"> {{ destination.location }}</span>
+      <!-- <button>
+        <span class="material-symbols-outlined"> add_card </span>
+      </button> -->
+    </div>
+    <ul>
+      <li>{{ destination.noRooms }} guests</li>
+      <li [ngClass]="{ red: destination.isDiscount }">
+        {{ destination.price }} $/night
+      </li>
+    </ul>
+  </div>
+  <div class="center"></div>
+</div>

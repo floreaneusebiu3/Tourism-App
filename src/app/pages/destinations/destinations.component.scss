@@ -1,0 +1,128 @@
+.panel {
+  display: flex;
+
+  .left-panel {
+    height: 95vh;
+    background-color: rgb(223, 236, 250);
+    display: flex;
+    flex-direction: column;
+
+    .filter-container {
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 10px 15px;
+      border: 1px solid #5e5e5e;
+      border-radius: 14px;
+      height: 6vh;
+
+      .search-input {
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: 100%;
+        margin-bottom: 10px;
+        width: fit-content;
+        margin: 0px;
+        padding: 5px 10px;
+        outline: none;
+        border: none;
+        border-left: 1px solid #5e5e5e;
+        margin-left: 5px;
+        background-color: rgb(223, 236, 250);
+        width: 100%;
+
+        &:focus::placeholder {
+          color: rgba(0, 0, 0, 0.12);
+        }
+      }
+
+      .mat-icon {
+        color: #585858;
+      }
+    }
+
+    .location-container {
+      flex: 1;
+    }
+    .location {
+      color: rgb(77, 77, 77);
+      align-self: center;
+      margin: 0px;
+      font-size: 16px;
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      font-weight: 700;
+      width: 357px;
+    }
+
+    .selectedLocation {
+      color: #ff6f00;
+      align-self: center;
+      margin: 0px;
+      font-size: 16px;
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+      font-weight: 700;
+      width: 357px;
+    }
+
+    .location-item {
+      cursor: pointer;
+      margin: 0px;
+      border-radius: 7px;
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: rgb(192, 217, 247);
+      }
+    }
+  }
+
+  .right-panel {
+    flex: 1;
+    background-color: rgb(192, 217, 247);
+
+    .header {
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 7vh;
+      background-color: rgb(223, 236, 250);
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      mat-slide-toggle {
+        margin-top: 15px;
+        span {
+          color: rgba(0, 0, 0, 0.87);
+          font-family: Roboto, "Helvetica Neue", sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: 100%;
+        }
+      }
+    }
+
+    .tickets {
+      flex: 1;
+      height: 88vh !important;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      app-destination {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
